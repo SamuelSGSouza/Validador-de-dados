@@ -1,0 +1,27 @@
+Este projeto foi criado com objetivo de servir como validador para algumas informações cadastrais normalmente solicitadas nos sites ou softwars brasileiros.
+O projeto tem por objetivo validar os seguintes dados:
+    - cpf;
+    - cnpj;
+    - cep;
+
+As funcionalidades deste projeto serão divididos da seguinte forma:
+Parte 1;
+    CPF
+        validação - deve conter 11 dígitos e utilizar biblioteca de validação.
+        máscara - 999.999.999-99
+
+    CNPJ
+        validação - deve conter 14 dígitos e utilizar biblioteca de validação.
+        máscara - 99.999.999/9999-99
+
+
+Parte 2;
+    Data e Hora
+        Deve salvar o momento de um cadastro
+        Deve retornar data e hora no formato pt-BR
+        Deve ser capaz de mostrar a quanto tempo um usuário está cadastrado.
+
+    CEP
+        validação - deve conter 8 dígitos.
+        máscara - 99999-999
+        Acessar WebService ViaCEP e retornar endereço com a cidade, uf e ddd (caso necessárias, outras informações podem ser obtidas).
