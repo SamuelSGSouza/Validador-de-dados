@@ -1,27 +1,26 @@
-Este projeto foi criado com objetivo de servir como validador para algumas informações cadastrais normalmente solicitadas nos sites ou softwars brasileiros.
+Este projeto foi criado com objetivo de servir como validador para algumas informações cadastrais normalmente solicitadas nos sites ou softwars brasileiros. 
+Os arquivos estão prontos para serem aplicados em sites ou aplicações que necessitem de validação de dados.
 O projeto tem por objetivo validar os seguintes dados:
     - cpf;
     - cnpj;
     - cep;
 
 As funcionalidades deste projeto serão divididos da seguinte forma:
-Parte 1;
-    CPF
-        validação - deve conter 11 dígitos e utilizar biblioteca de validação.
-        máscara - 999.999.999-99
 
-    CNPJ
-        validação - deve conter 14 dígitos e utilizar biblioteca de validação.
-        máscara - 99.999.999/9999-99
+Parte 1
+    validação:
+        - Primeiro identificar se a quantidade de dígitos é válida para um dos formatos: cpf ou cnpj,
+        - Valida se a quantidade de dígitos está de acordo com o padrão nacional (11 dígitos para cpf e 14 para cnpj),
+        - Utilizar pacote do python (validate-docbr) para validação de dados brasileros,
+        - Por fim aplica uma máscara a esse documento digitado para deixá-lo no padrão conhecido cpf = 999.999.999-99 ou cnpj = 99.999.999/9999-99.
 
 
-Parte 2;
-    Data e Hora
-        Deve salvar o momento de um cadastro
-        Deve retornar data e hora no formato pt-BR
-        Deve ser capaz de mostrar a quanto tempo um usuário está cadastrado.
+Parte 2
+    Data e Hora:
+        - Salva o momento do cadastro de um indivíduo e retornar essa informação no formato brasileiro dia/mês/ano
+        - Ser capaz de mostrar a quanto tempo um usuário está cadastrado.
 
     CEP
-        validação - deve conter 8 dígitos.
-        máscara - 99999-999
-        Acessar WebService ViaCEP e retornar endereço com a cidade, uf e ddd (caso necessárias, outras informações podem ser obtidas).
+        - valida se a quantidade de dígitos está de acordo com o padrão brasileiro de 8 dígitos,
+        - aplica uma máscara para que o número informado se encaixe no padrão brasileiro 99999-999,
+        - Acessa WebService ViaCEP e retornar endereço com a cidade, uf e ddd (caso necessárias, outras informações podem ser obtidas).
