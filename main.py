@@ -1,5 +1,6 @@
 from cpf_cnpj import Documento
 
+
 #Exemplo de utilização do validador
 #aqui como valor de 'documento' deve ser inserido o cpf que deseja validar
 documento = ""

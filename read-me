@@ -24,3 +24,5 @@ Parte 2
         - valida se a quantidade de dígitos está de acordo com o padrão brasileiro de 8 dígitos,
         - aplica uma máscara para que o número informado se encaixe no padrão brasileiro 99999-999,
         - Acessa WebService ViaCEP e retornar endereço com a cidade, uf e ddd (caso necessárias, outras informações podem ser obtidas).
+        - Acessa WebService ViaCEP e retornar endereço com a cidade, uf e ddd (caso necessárias, outras informações podem ser obtidas).
+
